@@ -6,7 +6,6 @@ import {
   Row, 
   Col, 
   Divider,
-  Typography,
   InputNumber
 } from 'antd';
 import type { FormInstance } from 'antd';
