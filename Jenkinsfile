@@ -46,7 +46,7 @@ pipeline {
                         
                         echo "Waiting for web server to start..."
                         sh "sleep 5"
-                        sh "curl -f http://localhost:8081"
+                        sh "curl -f http://host.docker.internal:8081"
                         echo "Health check passed!"
                     } catch (Exception e) {
                         echo "Health check failed! Fetching logs..."
