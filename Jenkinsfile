@@ -66,7 +66,7 @@ pipeline {
                     echo "Deploying ${DOCKER_IMAGE}:${DOCKER_TAG}..."
                     
                     sh "docker rm -f teller-web-dev || true"
-                    sh "docker run -d --name teller-web-container --restart unless-stopped -p ${APP_PORT}:80 ${DOCKER_IMAGE}:latest"
+                    sh "docker run -d --name teller-web-dev --restart unless-stopped -p ${APP_PORT}:80 ${DOCKER_IMAGE}:latest"
                     
                     echo "Deployment Successful! Web App is running on port ${APP_PORT}."
                 }
