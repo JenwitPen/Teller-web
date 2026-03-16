@@ -24,8 +24,8 @@ pipeline {
 
         stage('Build Application') {
             steps {
-                // Ensure environment variables are set correctly during build if needed
-                // sh "echo 'VITE_API_URL=http://your-production-api:8000' > .env.production"
+                   // คัดลอก .env.dev มาเป็น .env เพื่อให้ Vite ใช้ค่าจากไฟล์นี้ตอน Build
+                sh 'cp .env.dev .env'
                 sh 'npm run build'
             }
         }
