@@ -1,11 +1,12 @@
 import React from 'react';
-import { Card, Row, Col, Statistic, Typography } from 'antd';
-import { 
-  WalletOutlined, 
-  TransactionOutlined, 
-  HistoryOutlined,
-  UserOutlined 
-} from '@ant-design/icons';
+// import { Card, Row, Col, Statistic, Typography } from 'antd';
+// import { 
+//   WalletOutlined, 
+//   TransactionOutlined, 
+//   HistoryOutlined,
+//   UserOutlined 
+// } from '@ant-design/icons';
+import { Typography } from 'antd';
 
 import { useDashboard } from '../hooks/useDashboard';
 
