@@ -13,7 +13,7 @@ import { useDashboard } from '../hooks/useDashboard';
 const { Title, Text } = Typography;
 
 const Dashboard: React.FC = () => {
-  const { user, stats } = useDashboard();
+  const { user } = useDashboard();
 
   // const getIcon = (type: string) => {
   //   switch (type) {
